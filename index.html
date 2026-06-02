@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasmehina — Professional Henna Design Artist</title>
+    <meta name="description" content="Rasmehina offers exquisite henna design services for weddings, events, and special occasions. Book your henna artist today.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS - Animate On Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- GLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="henna-spinner">
+                <svg viewBox="0 0 100 100" class="spinner-svg">
+                    <circle cx="50" cy="50" r="45" class="spinner-circle"/>
+                </svg>
+            </div>
+            <span class="loader-text" style="font-family:'Great Vibes',cursive;font-size:2rem;color:var(--primary);">Rasmehina</span>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-script">Rasmehina</span>
+                <span class="logo-tagline">Henna Art Studio</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#booking" class="nav-link btn-nav">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+
+        <!-- Swiper Hero Slider -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/slider_image.png" alt="Henna Design" class="hero-slide-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/front_1.png" alt="Bridal Henna" class="hero-slide-img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/front_2.png" alt="Artistic Henna" class="hero-slide-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content container">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <span class="hero-badge">✦ Premium Henna Art ✦</span>
+                <h1 class="hero-title">
+                    <span class="title-line">Exquisite</span>
+                    <span class="title-line accent">Henna Designs</span>
+                    <span class="title-line">For Every Occasion</span>
+                </h1>
+                <p class="hero-description">Transform your celebrations with stunning, hand-crafted mehndi artistry. From bridal masterpieces to elegant party designs — we bring your vision to life.</p>
+                <div class="hero-cta">
+                    <a href="#booking" class="btn btn-primary">
+                        <span>Book Appointment</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#gallery" class="btn btn-outline">
+                        <span>View Gallery</span>
+                        <i class="fas fa-images"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="200">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="300">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Design Styles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#services" class="scroll-indicator" aria-label="Scroll down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <div class="title-ornament">
+                    <span></span><i class="fas fa-spa"></i><span></span>
+                </div>
+                <p class="section-desc">We specialize in a wide range of henna designs tailored for every occasion, from intimate gatherings to grand celebrations.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Bridal Mehndi</h3>
+                    <p>Intricate and elaborate bridal henna designs that make your special day even more memorable. Full hand and feet coverage with personalized motifs.</p>
+                    <a href="#booking" class="service-link">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Party & Event Henna</h3>
+                    <p>Beautiful designs for festivals, parties, and celebrations. Quick-dry, long-lasting henna perfect for group events and social gatherings.</p>
+                    <a href="#booking" class="service-link">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Arabic & Indo-Arabic</h3>
+                    <p>Flowing, bold Arabic patterns and fusion Indo-Arabic styles. Elegant designs that combine traditional artistry with contemporary aesthetics.</p>
+                    <a href="#booking" class="service-link">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-hands"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Jagua & White Henna</h3>
+                    <p>Modern alternatives including jagua (blue-black stain) and white henna for a unique, contemporary look perfect for any skin tone.</p>
+                    <a href="#booking" class="service-link">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Baby Shower Henna</h3>
+                    <p>Celebrate the arrival of your little one with beautiful belly henna art and hand designs. Safe, natural henna for expecting mothers.</p>
+                    <a href="#booking" class="service-link">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Henna Workshops</h3>
+                    <p>Learn the art of mehndi in our interactive workshops. Perfect for team building, birthday parties, and cultural events.</p>
+                    <a href="#booking" class="service-link">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-images" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-img-main">
+                        <img src="assets/images/artist_1.png" alt="Henna Artist at Work" loading="lazy">
+                    </div>
+                    <div class="about-img-accent">
+                        <img src="assets/images/front_3.png" alt="Beautiful Henna Design" loading="lazy">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title left-align">The Art of <span class="text-accent">Mehndi</span></h2>
+                    <div class="title-ornament left">
+                        <span></span><i class="fas fa-spa"></i><span></span>
+                    </div>
+                    <p class="about-text">Welcome to <strong>Rasmehina</strong> — where tradition meets artistry. We are passionate henna artists dedicated to creating breathtaking mehndi designs that tell your unique story.</p>
+                    <p class="about-text">Our journey began over a decade ago with a simple love for the ancient art of henna. Today, we've had the privilege of adorning hundreds of brides and guests with our signature designs, blending traditional patterns with modern aesthetics.</p>
+                    <p class="about-text">We use only <strong>100% natural, organic henna</strong> paste — free from chemicals and PPD. Your safety and satisfaction are our top priorities.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Natural Henna</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom Designs</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>On-Location Service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Bridal Packages</span>
+                        </div>
+                    </div>
+
+                    <a href="#booking" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Portfolio</span>
+                <h2 class="section-title">Design Gallery</h2>
+                <div class="title-ornament">
+                    <span></span><i class="fas fa-spa"></i><span></span>
+                </div>
+                <p class="section-desc">Explore our collection of handcrafted henna designs — each piece a unique work of art created with love and precision.</p>
+            </div>
+
+            <!-- Gallery Filter Tabs -->
+            <div class="gallery-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="arabic">Arabic</button>
+                <button class="filter-btn" data-filter="party">Party</button>
+                <button class="filter-btn" data-filter="back-hand">Back Hand</button>
+            </div>
+
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item" data-category="bridal">
+                    <a href="assets/images/gallery_1.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Bridal Mehndi Design; description: Intricate bridal henna for the special day">
+                        <img src="assets/images/gallery_1.png" alt="Bridal Mehndi Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Bridal Mehndi</h4>
+                                <span>Wedding Design</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="arabic">
+                    <a href="assets/images/gallery_2.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Arabic Henna; description: Flowing Arabic henna pattern">
+                        <img src="assets/images/gallery_2.png" alt="Arabic Henna Pattern" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Arabic Henna</h4>
+                                <span>Classic Pattern</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="party">
+                    <a href="assets/images/gallery_3.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Party Henna; description: Elegant party henna design">
+                        <img src="assets/images/gallery_3.png" alt="Party Henna Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Party Henna</h4>
+                                <span>Festive Design</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="back-hand">
+                    <a href="assets/images/back_1.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Back Hand Design; description: Beautiful back hand henna pattern">
+                        <img src="assets/images/back_1.png" alt="Back Hand Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Back Hand Design</h4>
+                                <span>Detailed Artwork</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="bridal">
+                    <a href="assets/images/gallery_4.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Bridal Full Hand; description: Complete bridal henna coverage">
+                        <img src="assets/images/gallery_4.png" alt="Bridal Full Hand" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Bridal Full Hand</h4>
+                                <span>Complete Coverage</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="arabic">
+                    <a href="assets/images/gallery_5.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Intricate Arabic; description: Detailed Arabic mehndi art">
+                        <img src="assets/images/gallery_5.png" alt="Intricate Arabic Design" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Intricate Arabic</h4>
+                                <span>Fine Detail</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="party">
+                    <a href="assets/images/gallery_6.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Festival Henna; description: Vibrant festival henna design">
+                        <img src="assets/images/gallery_6.png" alt="Festival Henna" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Festival Henna</h4>
+                                <span>Celebration Design</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="back-hand">
+                    <a href="assets/images/back_2.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Ornamental Back; description: Ornamental back hand henna">
+                        <img src="assets/images/back_2.png" alt="Ornamental Back Hand" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Ornamental Back</h4>
+                                <span>Elegant Pattern</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item" data-category="bridal">
+                    <a href="assets/images/front_1.png" class="glightbox" data-gallery="portfolio" data-glightbox="title: Front Hand Bridal; description: Stunning front hand bridal mehndi">
+                        <img src="assets/images/front_1.png" alt="Front Hand Bridal" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Front Hand Bridal</h4>
+                                <span>Bridal Special</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESS / HOW IT WORKS ===== -->
+    <section class="section process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">How It Works</span>
+                <h2 class="section-title">Our Process</h2>
+                <div class="title-ornament">
+                    <span></span><i class="fas fa-spa"></i><span></span>
+                </div>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Book Your Session</h3>
+                    <p>Choose your preferred date, time and design style. We'll confirm your booking within 24 hours.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Design Consultation</h3>
+                    <p>Share your vision and preferences. We'll customize the design to perfectly match your style and occasion.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Henna Application</h3>
+                    <p>Sit back and relax as we create your beautiful henna art using 100% natural, organic henna paste.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Enjoy Your Design</h3>
+                    <p>After a few hours, peel off the paste to reveal a stunning dark stain that lasts 1-3 weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Client Love</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="title-ornament">
+                    <span></span><i class="fas fa-spa"></i><span></span>
+                </div>
+            </div>
+
+            <div class="swiper testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Absolutely stunning bridal mehndi! Every guest at my wedding was blown away by the intricate details. The artist was professional, punctual, and incredibly talented. Best decision I made for my wedding!</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/artist_5.png" alt="Sarah Ahmed" class="author-img">
+                                <div class="author-info">
+                                    <h4>Sarah Ahmed</h4>
+                                    <span>Bride</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">I hired Rasmehina for my engagement party and the designs were absolutely gorgeous! The henna was dark and long-lasting. All my friends wanted to know who did my mehndi. Highly recommended!</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/artist_6.png" alt="Fatima Khan" class="author-img">
+                                <div class="author-info">
+                                    <h4>Fatima Khan</h4>
+                                    <span>Engagement Party</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Amazing experience from start to finish! The artist took the time to understand my vision and created a custom design that was beyond my expectations. The natural henna left a beautiful stain.</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/artist_4.png" alt="Ayesha Malik" class="author-img">
+                                <div class="author-info">
+                                    <h4>Ayesha Malik</h4>
+                                    <span>Eid Celebration</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">The henna workshop was such a fun experience! Great for team building and everyone left with beautiful designs. The instructor was patient and very skilled. Will definitely book again!</p>
+                            <div class="testimonial-author">
+                                <img src="assets/images/artist_3.png" alt="Noor Ali" class="author-img">
+                                <div class="author-info">
+                                    <h4>Noor Ali</h4>
+                                    <span>Workshop Attendee</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BOOKING / CONTACT SECTION ===== -->
+    <section id="booking" class="section booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info" data-aos="fade-right">
+                    <span class="section-subtitle">Book Now</span>
+                    <h2 class="section-title left-align">Let's Create Something <span class="text-accent">Beautiful</span></h2>
+                    <div class="title-ornament left">
+                        <span></span><i class="fas fa-spa"></i><span></span>
+                    </div>
+                    <p>Ready to adorn yourself with beautiful henna? Fill out the form and we'll get back to you within 24 hours to confirm your booking.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+46731548080">+46 (731) 548-080</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:rasmehina1@gmail.com">rasmehina1@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Västra Frölunda Göteborg</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/rasmehina1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/rasmehenna/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@rasmehina" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://pin.it/1UgnlhyYd" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="booking-form-wrapper" data-aos="fade-left" id="contact">
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+46 (234) 567-890" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="bridal">Bridal Mehndi</option>
+                                <option value="party">Party & Event Henna</option>
+                                <option value="arabic">Arabic & Indo-Arabic</option>
+                                <option value="jagua">Jagua & White Henna</option>
+                                <option value="baby-shower">Baby Shower Henna</option>
+                                <option value="workshop">Henna Workshop</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your event, design preferences, number of guests..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Booking Request</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#" class="footer-logo">
+                            <span class="logo-script">Rasmehina</span>
+                        </a>
+                        <p>Bringing the timeless art of henna to your most cherished celebrations. Every design is a masterpiece crafted with love.</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/rasmehina1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/rasmehenna/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com/@rasmehina" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://pin.it/1UgnlhyYd" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+                        <h4>Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#services">Bridal Mehndi</a></li>
+                            <li><a href="#services">Party Henna</a></li>
+                            <li><a href="#services">Arabic Designs</a></li>
+                            <li><a href="#services">Jagua Henna</a></li>
+                            <li><a href="#services">Workshops</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" data-aos="fade-up" data-aos-delay="400">
+                        <h4>Contact Us</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-phone-alt"></i> +46 (731) 548-080</li>
+                            <li><i class="fas fa-envelope"></i> rasmehina1@gmail.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Västra Frölunda Göteborg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Rasmehina. All rights reserved. Crafted with <i class="fas fa-heart" style="color:var(--primary);"></i> for henna lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/+46731548080" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
