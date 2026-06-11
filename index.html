@@ -28,6 +28,23 @@
 </head>
 <body>
 
+    <!-- ===== GDPR COOKIE CONSENT BANNER ===== -->
+    <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+        <div class="cookie-banner__inner">
+            <div class="cookie-banner__text">
+                <i class="fas fa-cookie-bite cookie-banner__icon"></i>
+                <div>
+                    <strong>We value your privacy</strong>
+                    <p>This website uses functional cookies only (to remember your consent choice). We also load Google Fonts and other CDN resources which may process your IP address. By continuing, you accept our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                </div>
+            </div>
+            <div class="cookie-banner__actions">
+                <button id="cookieAccept" class="cookie-btn cookie-btn--accept">Accept</button>
+                <button id="cookieDecline" class="cookie-btn cookie-btn--decline">Decline</button>
+            </div>
+        </div>
+    </div>
+
     <!-- ===== PRELOADER ===== -->
     <div id="preloader">
         <div class="loader">
@@ -635,6 +652,13 @@
                             <label for="message">Your Message</label>
                             <textarea id="message" name="message" rows="4" placeholder="Tell us about your event, design preferences, number of guests..."></textarea>
                         </div>
+                        <div class="form-group gdpr-consent">
+                            <label class="gdpr-label">
+                                <input type="checkbox" id="gdprConsent" name="gdprConsent" required>
+                                <span class="gdpr-checkmark"></span>
+                                <span class="gdpr-text">I consent to Rasmehina collecting and processing my personal data (name, email, phone) to handle my booking request, in accordance with the <a href="privacy-policy.html" target="_blank">Privacy Policy</a>. I understand I can withdraw consent at any time. <span class="required-star">*</span></span>
+                            </label>
+                        </div>
                         <button type="submit" class="btn btn-primary btn-full">
                             <span>Send Booking Request</span>
                             <i class="fas fa-paper-plane"></i>
@@ -696,7 +720,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Rasmehina. All rights reserved. Crafted with <i class="fas fa-heart" style="color:var(--primary);"></i> for henna lovers.</p>
+                <p>&copy; 2026 Rasmehina. All rights reserved. Crafted with <i class="fas fa-heart" style="color:var(--primary);"></i> for henna lovers. | <a href="privacy-policy.html" style="color:var(--primary-light);text-decoration:underline;">Privacy Policy</a></p>
             </div>
         </div>
     </footer>

@@ -5,6 +5,38 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ===== GDPR COOKIE CONSENT BANNER =====
+    const cookieBanner = document.getElementById('cookieBanner');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+    const CONSENT_KEY = 'rasmehina_gdpr_consent';
+
+    const getCookie = (name) => {
+        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        return match ? match[2] : null;
+    };
+    const setCookie = (name, value, days) => {
+        const expires = new Date(Date.now() + days * 864e5).toUTCString();
+        document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
+    };
+
+    if (cookieBanner && !getCookie(CONSENT_KEY)) {
+        // Show banner after short delay
+        setTimeout(() => cookieBanner.classList.add('visible'), 800);
+    }
+    if (cookieAccept) {
+        cookieAccept.addEventListener('click', () => {
+            setCookie(CONSENT_KEY, 'accepted', 365);
+            cookieBanner.classList.remove('visible');
+        });
+    }
+    if (cookieDecline) {
+        cookieDecline.addEventListener('click', () => {
+            setCookie(CONSENT_KEY, 'declined', 365);
+            cookieBanner.classList.remove('visible');
+        });
+    }
+
     // ===== HELPER: Hide Preloader =====
     const preloader = document.getElementById('preloader');
     const hidePreloader = () => {
